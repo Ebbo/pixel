@@ -8,8 +8,8 @@ import (
 
 	_ "image/png"
 
-	"github.com/faiface/pixel"
-	"github.com/faiface/pixel/pixelgl"
+	"github.com/ebbo/pixel"
+	"github.com/ebbo/pixel/pixelgl"
 )
 
 var (

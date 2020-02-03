@@ -1,8 +1,8 @@
 package pixelgl
 
 import (
-	"github.com/faiface/glhf"
-	"github.com/faiface/mainthread"
+	"github.com/ebbo/glhf"
+	"github.com/ebbo/mainthread"
 	"github.com/go-gl/mathgl/mgl32"
 	"github.com/pkg/errors"
 )
