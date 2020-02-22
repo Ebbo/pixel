@@ -164,6 +164,17 @@ func NewWindow(cfg WindowConfig) (*Window, error) {
 	return w, nil
 }
 
+// Hide hides the window.
+//The window still exists and holds its state. It can be made visible by calling Show().
+func (w *Window) Hide() {
+	w.window.Hide()
+}
+
+// Show shows a hidden window. This can be called on hidden windows.
+func (w *Window) Show() {
+	w.window.Show()
+}
+
 // Destroy destroys the Window. The Window can't be used any further.
 func (w *Window) Destroy() {
 	mainthread.Call(func() {
@@ -444,3 +455,4 @@ func (w *Window) Color(at pixel.Vec) pixel.RGBA {
 func (w *Window) Canvas() *Canvas {
 	return w.canvas
 }
+
